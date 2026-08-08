@@ -1,0 +1,759 @@
+@import "tailwindcss";
+
+/* ================================
+   GLOBAL
+================================ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #070707;
+  color: white;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(250, 204, 21, 0.25);
+  color: #fde047;
+}
+
+/* ================================
+   SCROLLBAR
+================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #070707;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #292929;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #facc15;
+}
+
+/* ================================
+   ANIMATIONS
+================================ */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+
+  50% {
+    opacity: 0.75;
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out both;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+/* ================================
+   ANIMATION DELAYS
+================================ */
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+.delay-600 {
+  animation-delay: 600ms;
+}
+
+/* ================================
+   REDUCED MOTION
+================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* =========================================================
+   PREMIUM HERO ANIMATIONS
+========================================================= */
+
+@keyframes heroLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroHeading {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroSubtitle {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroProfile {
+  from {
+    opacity: 0;
+    transform: translateX(35px) scale(0.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes heroLine {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes heroUnderline {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes heroSpin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes heroSpinReverse {
+  from {
+    transform: rotate(360deg);
+  }
+
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes heroGlow {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes heroPulse {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes heroParticle {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: translateY(0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes heroBadge {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes heroShine {
+  0% {
+    transform: translateX(-120%);
+    opacity: 0;
+  }
+
+  35% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+
+  65% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(120%);
+    opacity: 0;
+  }
+}
+
+@keyframes heroScroll {
+  0% {
+    transform: translateY(-120%);
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(250%);
+    opacity: 0;
+  }
+}
+
+
+/* =========================================================
+   HERO ANIMATION CLASSES
+========================================================= */
+
+.animate-hero-left {
+  animation: heroLeft 0.9s ease-out both;
+}
+
+.animate-hero-heading {
+  animation: heroHeading 0.8s ease-out 0.15s both;
+}
+
+.animate-hero-subtitle {
+  animation: heroSubtitle 0.8s ease-out 0.3s both;
+}
+
+.animate-hero-description {
+  animation: heroSubtitle 0.8s ease-out 0.45s both;
+}
+
+.animate-hero-buttons {
+  animation: heroSubtitle 0.8s ease-out 0.6s both;
+}
+
+.animate-hero-social {
+  animation: heroSubtitle 0.8s ease-out 0.75s both;
+}
+
+.animate-hero-profile {
+  animation: heroProfile 1s ease-out 0.2s both;
+}
+
+.animate-hero-line {
+  animation: heroLine 1s ease-out both;
+}
+
+.animate-hero-underline {
+  animation: heroUnderline 1s ease-out 0.9s both;
+}
+
+.animate-hero-spin {
+  animation: heroSpin 18s linear infinite;
+}
+
+.animate-hero-spin-reverse {
+  animation: heroSpinReverse 25s linear infinite;
+}
+
+.animate-hero-glow {
+  animation: heroGlow 5s ease-in-out infinite;
+}
+
+.animate-hero-pulse {
+  animation: heroPulse 5s ease-in-out infinite;
+}
+
+.animate-hero-pulse-slow {
+  animation: heroPulse 7s ease-in-out infinite;
+}
+
+.animate-hero-particle {
+  animation: heroParticle 4s ease-in-out infinite;
+}
+
+.animate-hero-badge {
+  animation: heroBadge 4s ease-in-out infinite;
+}
+
+.animate-hero-badge-delay {
+  animation: heroBadge 4s ease-in-out 1s infinite;
+}
+
+.animate-hero-shine {
+  animation: heroShine 5s ease-in-out infinite;
+}
+
+.animate-hero-scroll {
+  animation: heroScroll 1.8s ease-in-out infinite;
+}
+/* =========================================================
+   ABOUT — PREMIUM MOTION SYSTEM
+========================================================= */
+
+/* ---------- Background movement ---------- */
+
+@keyframes aboutAmbientMove {
+  0% {
+    transform: translate3d(-20px, -10px, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(30px, 20px, 0) scale(1.08);
+  }
+
+  100% {
+    transform: translate3d(-20px, -10px, 0) scale(1);
+  }
+}
+
+@keyframes aboutAmbientMoveSlow {
+  0% {
+    transform: translate3d(20px, 10px, 0) scale(1);
+  }
+
+  50% {
+    transform: translate3d(-25px, -20px, 0) scale(1.1);
+  }
+
+  100% {
+    transform: translate3d(20px, 10px, 0) scale(1);
+  }
+}
+
+/* ---------- Section entrance ---------- */
+
+@keyframes aboutReveal {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes aboutLeftReveal {
+  from {
+    opacity: 0;
+    transform: translateX(-35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes aboutRightReveal {
+  from {
+    opacity: 0;
+    transform: translateX(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ---------- Section line ---------- */
+
+@keyframes aboutLineGrow {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* ---------- Card border ---------- */
+
+@keyframes aboutBorderGlow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 rgba(250, 204, 21, 0),
+      inset 0 0 0 rgba(250, 204, 21, 0);
+  }
+
+  50% {
+    box-shadow:
+      0 0 25px rgba(250, 204, 21, 0.025),
+      inset 0 0 20px rgba(250, 204, 21, 0.015);
+  }
+}
+
+/* ---------- Floating glow ---------- */
+
+@keyframes aboutGlowFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(20px, -15px, 0);
+  }
+}
+
+/* ---------- Number shimmer ---------- */
+
+@keyframes aboutNumberShimmer {
+  0% {
+    background-position: -200% center;
+  }
+
+  100% {
+    background-position: 200% center;
+  }
+}
+
+/* ---------- Status pulse ---------- */
+
+@keyframes aboutStatusPulse {
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(250, 204, 21, 0.35),
+      0 0 15px rgba(250, 204, 21, 0.5);
+  }
+
+  70% {
+    box-shadow:
+      0 0 0 8px rgba(250, 204, 21, 0),
+      0 0 25px rgba(250, 204, 21, 0.2);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(250, 204, 21, 0),
+      0 0 15px rgba(250, 204, 21, 0.5);
+  }
+}
+
+
+/* =========================================================
+   APPLY ANIMATIONS
+========================================================= */
+
+.animate-about-header {
+  animation: aboutReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-about-left {
+  animation:
+    aboutLeftReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.15s both,
+    aboutBorderGlow 5s ease-in-out 1.2s infinite;
+}
+
+.animate-about-line {
+  animation: aboutLineGrow 1s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-about-underline {
+  animation: aboutLineGrow 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.6s both;
+}
+
+.animate-about-glow {
+  animation: aboutAmbientMove 8s ease-in-out infinite;
+}
+
+.animate-about-glow-slow {
+  animation: aboutAmbientMoveSlow 11s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   HIGHLIGHT CARDS
+========================================================= */
+
+.about-highlight {
+  position: relative;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.about-card-1 {
+  animation: aboutRightReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both;
+}
+
+.about-card-2 {
+  animation: aboutRightReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.35s both;
+}
+
+.about-card-3 {
+  animation: aboutRightReveal 0.8s cubic-bezier(0.22, 1, 0.36, 1) 0.5s both;
+}
+
+
+/* =========================================================
+   PREMIUM CARD HOVER
+========================================================= */
+
+.about-highlight::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background:
+    radial-gradient(
+      circle at 0% 50%,
+      rgba(250, 204, 21, 0.07),
+      transparent 45%
+    );
+  opacity: 0;
+  transition: opacity 500ms ease;
+}
+
+.about-highlight:hover::before {
+  opacity: 1;
+}
+
+.about-highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(250, 204, 21, 0.9),
+    transparent
+  );
+  transition: width 700ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.about-highlight:hover::after {
+  width: 100%;
+}
+
+
+/* =========================================================
+   LEFT CARD
+========================================================= */
+
+.about-glass-card {
+  transform-style: preserve-3d;
+  transition:
+    transform 500ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 500ms ease,
+    box-shadow 500ms ease,
+    background-color 500ms ease;
+}
+
+.about-glass-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(250, 204, 21, 0.22);
+  background-color: rgba(250, 204, 21, 0.025);
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.35),
+    0 0 40px rgba(250, 204, 21, 0.035);
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.about-stat {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-stat::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 25%,
+    rgba(250, 204, 21, 0.08),
+    transparent 75%
+  );
+  transform: translateX(-120%);
+  transition: transform 700ms ease;
+}
+
+.about-stat:hover::before {
+  transform: translateX(120%);
+}
+
+
+/* =========================================================
+   STATUS DOT
+========================================================= */
+
+.about-glass-card .animate-ping {
+  animation-duration: 2.2s;
+}
+
+
+/* =========================================================
+   REDUCE MOTION FOR ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-about-header,
+  .animate-about-left,
+  .animate-about-line,
+  .animate-about-underline,
+  .animate-about-glow,
+  .animate-about-glow-slow,
+  .about-card-1,
+  .about-card-2,
+  .about-card-3 {
+    animation: none;
+  }
+
+  .about-highlight,
+  .about-glass-card {
+    transition: none;
+  }
+}
