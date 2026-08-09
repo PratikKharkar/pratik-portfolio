@@ -22,6 +22,7 @@ function Navbar() {
     { name: "Skills", href: "#skills" },
     { name: "Projects", href: "#projects" },
     { name: "Education", href: "#education" },
+    { name: "BeyondCoding", href: "#outside" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -37,9 +38,7 @@ function Navbar() {
           : "bg-transparent"
       }`}
     >
-      {/* ================= DESKTOP / TOP BAR ================= */}
-
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
 
         {/* LOGO */}
 
@@ -56,25 +55,21 @@ function Navbar() {
             <p className="text-sm font-semibold tracking-wide text-white">
               Pratik Kharkar
             </p>
-
-            <p className="text-[10px] uppercase tracking-[0.25em] text-gray-600">
-              Software Developer
-            </p>
           </div>
         </a>
 
         {/* DESKTOP NAV */}
 
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-7 md:flex">
           {links.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="group relative text-xs font-medium text-gray-500 transition duration-300 hover:text-yellow-400"
+              className="relative text-xs font-medium text-gray-500 transition duration-300 hover:text-yellow-400"
             >
               {link.name}
 
-              <span className="absolute -bottom-2 left-0 h-px w-0 bg-yellow-400 transition-all duration-300 group-hover:w-full" />
+              <span className="absolute -bottom-2 left-0 h-px w-0 bg-yellow-400 transition-all duration-300 hover:w-full" />
             </a>
           ))}
         </div>
@@ -82,8 +77,6 @@ function Navbar() {
         {/* RIGHT SIDE */}
 
         <div className="flex items-center gap-3">
-
-          {/* GITHUB */}
 
           <a
             href="https://github.com/PratikKharkar"
@@ -94,10 +87,9 @@ function Navbar() {
             GitHub ↗
           </a>
 
-          {/* LET'S TALK */}
-
           <a
             href="#contact"
+            onClick={handleLinkClick}
             className="hidden rounded-lg bg-yellow-400 px-4 py-2.5 text-xs font-semibold text-black transition duration-300 hover:bg-yellow-300 hover:shadow-[0_0_25px_rgba(250,204,21,0.15)] sm:block"
           >
             Let's Talk
@@ -135,13 +127,15 @@ function Navbar() {
           </button>
 
         </div>
-      </div>
+      </nav>
 
-      {/* ================= MOBILE MENU ================= */}
+      {/* MOBILE MENU */}
 
       <div
         className={`overflow-hidden border-t border-white/[0.06] bg-[#070707]/95 backdrop-blur-xl transition-all duration-300 md:hidden ${
-          menuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+          menuOpen
+            ? "max-h-[600px] opacity-100"
+            : "max-h-0 opacity-0"
         }`}
       >
         <div className="space-y-1 px-6 py-5">
@@ -160,7 +154,7 @@ function Navbar() {
           <a
             href="#contact"
             onClick={handleLinkClick}
-            className="mt-3 block rounded-lg bg-yellow-400 px-4 py-3 text-center text-sm font-semibold text-black transition hover:bg-yellow-300"
+            className="mt-3 block rounded-lg bg-yellow-400 px-4 py-3 text-center text-sm font-semibold text-black"
           >
             Let's Talk
           </a>

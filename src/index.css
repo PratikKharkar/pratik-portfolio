@@ -757,3 +757,176 @@ body {
     transition: none;
   }
 }
+/* Premium Gold Theme */
+
+.text-yellow-400 {
+  color: #e5b93f !important;
+}
+
+.bg-yellow-400 {
+  background-color: #e5b93f !important;
+}
+
+.border-yellow-400 {
+  border-color: #e5b93f !important;
+}
+
+.text-yellow-300 {
+  color: #edca62 !important;
+}
+
+.bg-yellow-300 {
+  background-color: #edca62 !important;
+}
+
+.border-yellow-400\/30 {
+  border-color: rgba(229, 185, 63, 0.3) !important;
+}
+
+.border-yellow-400\/40 {
+  border-color: rgba(229, 185, 63, 0.4) !important;
+}
+
+.border-yellow-400\/20 {
+  border-color: rgba(229, 185, 63, 0.2) !important;
+}
+
+.border-yellow-400\/15 {
+  border-color: rgba(229, 185, 63, 0.15) !important;
+}
+
+.bg-yellow-400\/\[0\.06\] {
+  background-color: rgba(229, 185, 63, 0.06) !important;
+}
+
+.bg-yellow-400\/\[0\.04\] {
+  background-color: rgba(229, 185, 63, 0.04) !important;
+}
+
+.bg-yellow-400\/\[0\.02\] {
+  background-color: rgba(229, 185, 63, 0.02) !important;
+}
+/* =========================================
+   PREMIUM ICE BLUE THEME
+   ========================================= */
+
+.text-yellow-400 {
+  color: #38bdf8 !important;
+}
+
+.text-yellow-300 {
+  color: #7dd3fc !important;
+}
+
+.bg-yellow-400 {
+  background-color: #38bdf8 !important;
+}
+
+.bg-yellow-300 {
+  background-color: #7dd3fc !important;
+}
+
+.border-yellow-400 {
+  border-color: #38bdf8 !important;
+}
+
+.border-yellow-400\/40 {
+  border-color: rgba(56, 189, 248, 0.4) !important;
+}
+
+.border-yellow-400\/30 {
+  border-color: rgba(56, 189, 248, 0.3) !important;
+}
+
+.border-yellow-400\/20 {
+  border-color: rgba(56, 189, 248, 0.2) !important;
+}
+
+.border-yellow-400\/15 {
+  border-color: rgba(56, 189, 248, 0.15) !important;
+}
+
+.bg-yellow-400\/\[0\.06\] {
+  background-color: rgba(56, 189, 248, 0.06) !important;
+}
+
+.bg-yellow-400\/\[0\.05\] {
+  background-color: rgba(56, 189, 248, 0.05) !important;
+}
+
+.bg-yellow-400\/\[0\.04\] {
+  background-color: rgba(56, 189, 248, 0.04) !important;
+}
+
+.bg-yellow-400\/\[0\.035\] {
+  background-color: rgba(56, 189, 248, 0.035) !important;
+}
+
+.bg-yellow-400\/\[0\.025\] {
+  background-color: rgba(56, 189, 248, 0.025) !important;
+}
+
+.bg-yellow-400\/\[0\.02\] {
+  background-color: rgba(56, 189, 248, 0.02) !important;
+}
+
+.hover\:bg-yellow-300:hover {
+  background-color: #7dd3fc !important;
+}
+
+.hover\:text-yellow-400:hover {
+  color: #38bdf8 !important;
+}
+
+.hover\:border-yellow-400:hover {
+  border-color: #38bdf8 !important;
+}
+
+.hover\:border-yellow-400\/40:hover {
+  border-color: rgba(56, 189, 248, 0.4) !important;
+}
+
+/* Blue Glow Replacements */
+
+.shadow-\[0_0_12px_rgba\(250\2c 204\2c 21\2c 0\.8\)\] {
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.8) !important;
+}
+
+.hover\:shadow-\[0_0_25px_rgba\(250\2c 204\2c 21\2c 0\.15\)\]:hover {
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.15) !important;
+}
+/* =========================================
+   ICE BLUE HOVER FIX
+   ========================================= */
+
+.hover\:bg-yellow-300:hover {
+  background-color: #7dd3fc !important;
+}
+
+.hover\:text-yellow-400:hover {
+  color: #38bdf8 !important;
+}
+
+.hover\:border-yellow-400:hover {
+  border-color: #38bdf8 !important;
+}
+
+.hover\:border-yellow-400\/40:hover {
+  border-color: rgba(56, 189, 248, 0.4) !important;
+}
+
+/* Replace old yellow glow */
+
+.hover\:shadow-\[0_0_30px_rgba\(250\2c 204\2c 21\2c 0\.2\)\]:hover {
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.2) !important;
+}
+
+.hover\:shadow-\[0_0_25px_rgba\(250\2c 204\2c 21\2c 0\.15\)\]:hover {
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.15) !important;
+}
+
+/* Yellow glow used by dots/icons */
+
+.shadow-\[0_0_12px_rgba\(250\2c 204\2c 21\2c 0\.8\)\] {
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.8) !important;
+}
