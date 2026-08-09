@@ -1,14 +1,14 @@
 function OutsideCode() {
   return (
     <section
-      id="outside"
-      className="relative overflow-hidden bg-[#070707] px-6 py-24 text-white sm:py-28"
+      id="outside-code"
+      className="relative overflow-hidden bg-[#070707] px-5 py-16 text-white sm:px-6 sm:py-24"
     >
-      {/* Background Glows */}
+      {/* ================= BACKGROUND GLOWS ================= */}
 
-      <div className="pointer-events-none absolute -left-40 top-1/4 h-96 w-96 rounded-full bg-yellow-400/[0.035] blur-[140px]" />
+      <div className="pointer-events-none absolute -left-40 top-1/4 h-96 w-96 rounded-full bg-sky-400/[0.035] blur-[140px]" />
 
-      <div className="pointer-events-none absolute -right-40 bottom-1/4 h-96 w-96 rounded-full bg-yellow-400/[0.025] blur-[140px]" />
+      <div className="pointer-events-none absolute -right-40 bottom-1/4 h-96 w-96 rounded-full bg-sky-400/[0.025] blur-[140px]" />
 
       <div className="relative mx-auto max-w-7xl">
 
@@ -17,16 +17,16 @@ function OutsideCode() {
         <div className="max-w-3xl animate-fade-up">
 
           <div className="flex items-center gap-3">
-            <span className="h-px w-10 bg-yellow-400" />
+            <span className="h-px w-10 bg-sky-400" />
 
-            <span className="text-xs font-medium uppercase tracking-[0.35em] text-yellow-400">
+            <span className="text-xs font-medium uppercase tracking-[0.35em] text-sky-400">
               Beyond the Code
             </span>
           </div>
 
           <h2 className="mt-5 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
             Life{" "}
-            <span className="text-yellow-400">
+            <span className="text-sky-400">
               beyond development.
             </span>
           </h2>
@@ -40,7 +40,7 @@ function OutsideCode() {
 
         {/* ================= PHOTO GRID ================= */}
 
-        <div className="mt-16 grid gap-5 md:grid-cols-5">
+        <div className="mt-12 grid gap-5 sm:mt-16 md:grid-cols-5">
 
           {/* ================= MY PHOTO ================= */}
 
@@ -48,12 +48,12 @@ function OutsideCode() {
 
             <div className="relative overflow-hidden">
 
-      <img
-  src="/outside/kho-kho-me.jpg"
-  alt="Pratik playing Kho Kho"
-  className="h-[360px] w-full object-cover object-center transition duration-700 ease-out group-hover:scale-105 sm:h-[430px]"
-  style={{ objectPosition: "center 70%" }}
-/>
+              <img
+                src="/outside/kho-kho-me.jpg"
+                alt="Pratik playing Kho Kho"
+                className="h-[330px] w-full object-cover object-center transition duration-700 ease-out group-hover:scale-105 sm:h-[430px]"
+                style={{ objectPosition: "center 70%" }}
+              />
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80 transition duration-500 group-hover:opacity-100" />
 
@@ -69,7 +69,7 @@ function OutsideCode() {
 
               <div className="absolute bottom-6 left-6 right-6">
 
-                <p className="text-xs uppercase tracking-[0.25em] text-yellow-400">
+                <p className="text-xs uppercase tracking-[0.25em] text-sky-400">
                   Kho Kho
                 </p>
 
@@ -92,10 +92,8 @@ function OutsideCode() {
               <img
                 src="/outside/kho-kho-team.jpg"
                 alt="Pratik with his Kho Kho team"
-                className="h-[360px] w-full object-cover transition duration-700 ease-out group-hover:scale-105 sm:h-[430px]"
+                className="h-[330px] w-full object-cover transition duration-700 ease-out group-hover:scale-105 sm:h-[430px]"
               />
-
-              {/* Overlay */}
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80 transition duration-500 group-hover:opacity-100" />
 
@@ -111,7 +109,7 @@ function OutsideCode() {
 
               <div className="absolute bottom-6 left-6 right-6">
 
-                <p className="text-xs uppercase tracking-[0.25em] text-yellow-400">
+                <p className="text-xs uppercase tracking-[0.25em] text-sky-400">
                   Teamwork
                 </p>
 
@@ -133,15 +131,15 @@ function OutsideCode() {
 
           {/* STORY */}
 
-          <div className="group rounded-3xl border border-white/[0.08] bg-white/[0.02] p-8 transition-all duration-500 hover:border-yellow-400/25 hover:bg-yellow-400/[0.015] sm:p-10">
+          <div className="group rounded-3xl border border-white/[0.08] bg-white/[0.02] p-6 transition-all duration-500 hover:border-sky-400/25 hover:bg-sky-400/[0.015] sm:p-10">
 
             <div className="flex items-center gap-3">
 
-              <span className="flex h-9 w-9 items-center justify-center rounded-lg border border-yellow-400/20 bg-yellow-400/[0.06] text-xs font-bold text-yellow-400">
+              <span className="flex h-9 w-9 items-center justify-center rounded-lg border border-sky-400/20 bg-sky-400/[0.06] text-xs font-bold text-sky-400">
                 01
               </span>
 
-              <span className="text-xs uppercase tracking-[0.3em] text-yellow-400">
+              <span className="text-xs uppercase tracking-[0.3em] text-sky-400">
                 The Sport
               </span>
 
@@ -149,7 +147,7 @@ function OutsideCode() {
 
             <h3 className="mt-6 text-3xl font-bold sm:text-4xl">
               More than just{" "}
-              <span className="text-yellow-400">
+              <span className="text-sky-400">
                 a sport.
               </span>
             </h3>
@@ -173,13 +171,13 @@ function OutsideCode() {
                 Play
               </span>
 
-              <span className="h-1 w-1 rounded-full bg-yellow-400" />
+              <span className="h-1 w-1 rounded-full bg-sky-400" />
 
               <span className="text-xs uppercase tracking-[0.2em] text-gray-600">
                 Compete
               </span>
 
-              <span className="h-1 w-1 rounded-full bg-yellow-400" />
+              <span className="h-1 w-1 rounded-full bg-sky-400" />
 
               <span className="text-xs uppercase tracking-[0.2em] text-gray-600">
                 Improve
@@ -195,19 +193,21 @@ function OutsideCode() {
 
             {/* TEAMWORK */}
 
-            <div className="group rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 transition-all duration-500 hover:-translate-y-1 hover:border-yellow-400/30 hover:bg-yellow-400/[0.02]">
+            <div className="group rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 transition-all duration-500 hover:-translate-y-1 hover:border-sky-400/30 hover:bg-sky-400/[0.02]">
 
               <div className="flex items-center justify-between">
-                <span className="text-xs tracking-[0.25em] text-yellow-400/70">
+
+                <span className="text-xs tracking-[0.25em] text-sky-400/70">
                   01
                 </span>
 
                 <span className="text-xs text-gray-700">
                   TEAM
                 </span>
+
               </div>
 
-              <h4 className="mt-4 text-lg font-semibold transition group-hover:text-yellow-400">
+              <h4 className="mt-4 text-lg font-semibold transition group-hover:text-sky-400">
                 Teamwork
               </h4>
 
@@ -220,19 +220,21 @@ function OutsideCode() {
 
             {/* AWARENESS */}
 
-            <div className="group rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 transition-all duration-500 hover:-translate-y-1 hover:border-yellow-400/30 hover:bg-yellow-400/[0.02]">
+            <div className="group rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 transition-all duration-500 hover:-translate-y-1 hover:border-sky-400/30 hover:bg-sky-400/[0.02]">
 
               <div className="flex items-center justify-between">
-                <span className="text-xs tracking-[0.25em] text-yellow-400/70">
+
+                <span className="text-xs tracking-[0.25em] text-sky-400/70">
                   02
                 </span>
 
                 <span className="text-xs text-gray-700">
                   FOCUS
                 </span>
+
               </div>
 
-              <h4 className="mt-4 text-lg font-semibold transition group-hover:text-yellow-400">
+              <h4 className="mt-4 text-lg font-semibold transition group-hover:text-sky-400">
                 Awareness
               </h4>
 
@@ -245,19 +247,21 @@ function OutsideCode() {
 
             {/* DISCIPLINE */}
 
-            <div className="group rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 transition-all duration-500 hover:-translate-y-1 hover:border-yellow-400/30 hover:bg-yellow-400/[0.02]">
+            <div className="group rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 transition-all duration-500 hover:-translate-y-1 hover:border-sky-400/30 hover:bg-sky-400/[0.02]">
 
               <div className="flex items-center justify-between">
-                <span className="text-xs tracking-[0.25em] text-yellow-400/70">
+
+                <span className="text-xs tracking-[0.25em] text-sky-400/70">
                   03
                 </span>
 
                 <span className="text-xs text-gray-700">
                   MINDSET
                 </span>
+
               </div>
 
-              <h4 className="mt-4 text-lg font-semibold transition group-hover:text-yellow-400">
+              <h4 className="mt-4 text-lg font-semibold transition group-hover:text-sky-400">
                 Discipline
               </h4>
 
@@ -274,7 +278,7 @@ function OutsideCode() {
 
         {/* ================= CLOSING LINE ================= */}
 
-        <div className="mt-14 text-center">
+        <div className="mt-12 text-center sm:mt-14">
 
           <p className="text-sm uppercase tracking-[0.3em] text-gray-700">
             The field teaches me things
@@ -282,7 +286,7 @@ function OutsideCode() {
 
           <p className="mt-3 text-2xl font-semibold text-gray-400 sm:text-3xl">
             the{" "}
-            <span className="text-yellow-400">
+            <span className="text-sky-400">
               screen
             </span>{" "}
             can't.
